@@ -1,0 +1,20 @@
+{
+  "name": "ethers-simple-storage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "ethers": "^5.5.3",
+    "solc": "0.8.7-fixed",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  },
+  "scripts": {
+    "deploy": "ts-node deploy",
+    "compile": "yarn solcjs --bin --abi --include-path node_modules --base-path contracts -o compiled contracts/SimpleStorage.sol"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11"
+  }
+}
